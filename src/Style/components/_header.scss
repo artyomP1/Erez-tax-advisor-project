@@ -89,7 +89,7 @@
     align-content: center;
     cursor: pointer;
   }
-  .openMenu + .screen {
+  .openMenu.screen {
     visibility: visible;
     opacity: 0.5;
   }

@@ -14,9 +14,6 @@ class Header extends React.Component {
     };
     render() {
         let className = this.state.isOpenMenu ? 'openMenu screen' : 'screen';
-        // if (this.state.isOpenMenu) {
-        //     let className = 'openMenu';
-        // }
         return (
             <section className="header flex space-between">
                 <div>

@@ -11,10 +11,8 @@
 
 // COMPONENTS
 @import "components/_header.scss";
+@import "components/_asaidContactUs.scss";
 
-// // VIEWS
-// @import "views/homePage.scss";
-// @import "views/contactPage.scss";
-// @import "views/contactDetails.scss";
-// @import "views/contactEditPage.scss";
-// @import "views/signUpPage.scss";
+// VIEWS
+@import "views/_app.scss";
+@import "views/_homePage.scss";

@@ -1,0 +1,16 @@
+.offcanvas-btn {
+  z-index: 99;
+  position: fixed;
+  bottom: 8%;
+  right: 3%;
+  height: 50px;
+  width: 50px;
+  background: #e2cb36;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 0;
+  transition: all 0.3s ease;
+}
