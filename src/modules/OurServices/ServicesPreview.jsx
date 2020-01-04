@@ -1,19 +1,13 @@
 import React from "react";
 
 export default function(props) {
-  const { service } = props;
+  const { ourService } = props;
 
   return (
-    <div className="contactPrev">
-      <img
-        className="cats-img"
-        src={`https://robohash.org/${contect.name}.png?set=set2`}
-        alt=""
-      />
-      <div className="contact-details">
-        <h2>Name: {contect.name}</h2>
-        <h3> {contect.phone}</h3>
-        <h3> {contect.email}</h3>
+    <div className="container-ourService">
+      <img className="service-img" src={ourService.imgUrl} alt="" />
+      <div className="ourService-details">
+        <h2> {ourService.name}</h2>
       </div>
     </div>
   );

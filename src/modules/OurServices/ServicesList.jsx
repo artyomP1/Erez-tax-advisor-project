@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ServicesPreview from "./ServicesPreview";
 
-export default function({ OurServices }) {
+export default function({ ourServices }) {
   return (
-    <ul className="robot-list">
-      {OurServices.map(service => {
+    <ul className="ourService-container">
+      {ourServices.map(ourService => {
         return (
-          <li key={service._id}>
-            <Link to={`/service/${service._id}`}>
-              <ContactPreview service={service} />
+          <li key={ourService._id}>
+            <Link to={`/service/${ourService._id}`}>
+              <ServicesPreview ourService={ourService} />
             </Link>
           </li>
         );

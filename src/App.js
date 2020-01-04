@@ -22,9 +22,9 @@ class App extends Component {
           <Route exact path="/about" component={About} />
           <Route exact path="/contactUs" component={ContactUs} />
         </Switch>
-        <header className="App-footer">
+        <section className="App-footer">
           <Footer />
-        </header>
+        </section>
       </div>
     );
   }
