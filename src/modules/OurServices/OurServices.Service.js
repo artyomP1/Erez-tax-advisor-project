@@ -74,7 +74,7 @@ function _makeId(length = 10) {
 const OurServices = [{
     "_id": "5a56640269f443a5d64b32ca",
     "name": "החזרי מס לשכירים",
-    "imgUrl": "https://res.cloudinary.com/artyompogosov/image/upload/v1577873366/lyvvivj2zalfbmdxajfh.jpg",
+    "imgUrl": "https://res.cloudinary.com/artyompogosov/image/upload/v1578159227/b44vtbz3lvep7kvuwtou.jpg",
 },
 {
     "_id": "5a5664025f6ae9aa24a99fde",
@@ -84,23 +84,23 @@ const OurServices = [{
 {
     "_id": "5a56640252d6acddd183d319",
     "name": "הנהלת חשבונות",
-    "imgUrl": "https://res.cloudinary.com/artyompogosov/image/upload/v1577873364/qfstpqny0vrvmnnrjj8q.jpg",
+    "imgUrl": "https://res.cloudinary.com/artyompogosov/image/upload/v1578159336/c8itpj7wi1xltqh2skxk.jpg",
 },
 {
     "_id": "5a1110252d6acddd183d319",
     "name": "תכנון מס",
-    "imgUrl": "https://res.cloudinary.com/artyompogosov/image/upload/v1578124500/rflxfggrhmysqgduiveb.jpg",
+    "imgUrl": "https://res.cloudinary.com/artyompogosov/image/upload/v1578158617/xjgy0zrh7kqxbfdnqxqs.jpg",
 },
 {
     "_id": "5a566402ed1cf3412345674d",
     "name": "חשבות שכר",
-    "imgUrl": "https://res.cloudinary.com/artyompogosov/image/upload/v1578124354/qwldp3x9y3zw39bf2anz.jpg",
+    "imgUrl": "https://res.cloudinary.com/artyompogosov/image/upload/v1578159686/jhdvdjguhmqnv1spydo6.jpg",
 
 },
 {
     "_id": "5a566402ed1cf349f0b47b4d",
     "name": "דוחות שנתיים",
-    "imgUrl": "https://res.cloudinary.com/artyompogosov/image/upload/v1577873361/q8oyglbim4eysp88k8da.jpg",
+    "imgUrl": "https://res.cloudinary.com/artyompogosov/image/upload/v1578159573/acpujepzg4dsoetva2pm.jpg",
 },
 {
     "_id": "5a566402ed1cf349f0b4123",

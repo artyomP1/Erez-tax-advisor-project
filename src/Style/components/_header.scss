@@ -1,9 +1,12 @@
 .header {
-  padding: 20px;
+  padding: 20px 50px;
 }
 
 .nav-bar {
-  width: 50%;
+  a {
+    font-size: 1.5rem;
+    padding-right: 20px;
+  }
 }
 
 .fa-bars {
@@ -93,9 +96,4 @@
     visibility: visible;
     opacity: 0.5;
   }
-}
-
-.map {
-  width: 300px;
-  height: 300px;
 }

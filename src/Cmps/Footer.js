@@ -10,7 +10,7 @@ export default function Header() {
                     <h1>Logo</h1>
                 </div>
                 <div className="flex column space-between">
-                    <div className="flex column align-center justify-center">
+                    <div className="office-details flex column align-center justify-center">
                         <h5>.5255205 ,כתובתנו: סטרומה 5, רמת גן </h5>
                         <h5>טלפון: 052-603-6402 </h5>
                         <h5>erez.tax@gmail.com :מייל</h5>

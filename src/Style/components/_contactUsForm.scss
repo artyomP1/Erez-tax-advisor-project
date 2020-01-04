@@ -1,0 +1,49 @@
+.main-form {
+  padding-bottom: 20px;
+  height: 270px;
+}
+
+.main-inputs {
+  height: 250px;
+  padding-bottom: 30px;
+  ::placeholder {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+}
+
+.textarea {
+  margin-right: 20px;
+}
+textarea {
+  border-radius: 5px;
+  border: 1.5px solid rgb(210, 215, 216);
+  outline: none;
+}
+.send-ms-btn {
+  width: 100px !important;
+  height: 70px;
+  font-size: 1.2rem;
+}
+
+.contact-us {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  //   background-color: gray;
+  input {
+    height: 50px;
+    width: 350px;
+    border: 1.5px solid rgb(210, 215, 216);
+    outline: none;
+  }
+  h2 {
+    font-size: 3rem;
+    padding-top: 20px;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    color: gray;
+  }
+}
