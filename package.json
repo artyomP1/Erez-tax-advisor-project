@@ -2,7 +2,7 @@
   "name": "erez-tax-advisor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/artyomP1/erez-website",
+  "homepage": "https://github.com/artyomP1/Erez-tax-advisor",
   "dependencies": {
     "@material-ui/core": "^4.8.2",
     "@testing-library/jest-dom": "^4.2.4",
