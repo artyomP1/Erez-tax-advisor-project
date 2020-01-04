@@ -24,7 +24,8 @@ class Header extends React.Component {
                 <div className="nav-bar flex space-around">
                     <Link onClick={this.getOpenMenu} to="/">ראשי</Link>
                     <Link onClick={this.getOpenMenu} to="/about">אודות</Link>
-                    <Link onClick={this.getOpenMenu} to="/about">שירותים</Link>
+                    <Link onClick={this.getOpenMenu} to="/ourServices">שירותים</Link>
+                    <Link onClick={this.getOpenMenu} to="/ourServices">מידע מקצועי</Link>
                     <Link onClick={this.getOpenMenu} to="/contactUs">צור קשר</Link>
                 </div >
             </section >

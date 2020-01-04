@@ -6,14 +6,14 @@ const INITIAL_STATE = {
 };
 
 
-export default function contactReducer(state = INITIAL_STATE, action) { //action : {type: 'SET_CURR_CONTACT', contact:contact}
+export default function ourServiceReducer(state = INITIAL_STATE, action) { //action : {type: 'SET_CURR_CONTACT', contact:contact}
     switch (action.type) {
         case 'SET_CURR_OUR_SERVICE':
             // state.currContact = action.contact //WRONG BECAUSE NOT IMMUTABLE
             return {
 
                 ...state,
-                currOurService: action.OurService
+                currOurService: action.ourService
             };
         case 'SET_OUR_SERVICES':
             return {

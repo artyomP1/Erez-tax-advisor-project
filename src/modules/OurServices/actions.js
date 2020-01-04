@@ -1,14 +1,14 @@
 import OurServicesService from "./OurServices.Service";
 
 
-const setCurrOurService = (OurService) => {
-    return { type: 'SET_CURR_OUR_SERVICE', OurService: OurService };
+const setCurrOurService = (ourService) => {
+    return { type: 'SET_CURR_OUR_SERVICE', ourService: ourService };
 };
 
 export const loadCurrService = (id) => {
     return async (dispatch) => {
-        const OurService = await ContactService.getServiceById(id);
-        return dispatch(setCurrOurService(OurService));
+        const ourService = await OurServicesService.getServiceById(id);
+        return dispatch(setCurrOurService(ourService));
     };
 };
 
@@ -23,13 +23,13 @@ export const loadCurrService = (id) => {
 //     };
 // };
 
-const setServices = (Services) => {
+const setServices = (ourServices) => {
     return { type: 'SET_OUR_SERVICES', ourServices };
 };
 
 export const loadServices = () => {
     return async (dispatch) => {
-        const Services = await OurServicesService.query();
-        return dispatch(setServices(Services));
+        const OurService = await OurServicesService.query();
+        return dispatch(setServices(OurService));
     };
 };

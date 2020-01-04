@@ -1,6 +1,6 @@
 import React from "react";
 import Map from "./Map";
-
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -16,12 +16,13 @@ export default function Header() {
                         <h5>erez.tax@gmail.com :מייל</h5>
                     </div>
                     <div>
-                        <ul className="flex pointer">
-                            <li> אודות</li>
-                            <li>| שירותים </li>
-                            <li>| מידע מקצועי </li>
-                            <li>| צור קשר </li>
-                        </ul>
+                        <div className="flex pointer">
+                            <Link to="/">ראשי |</Link>
+                            <Link to="/about">אודות |</Link>
+                            <Link to="/about">שירותים |</Link>
+                            <Link to="/about">מידע מקצועי  |</Link>
+                            <Link to="/contactUs">צור קשר</Link>
+                        </div>
                     </div>
                 </div>
                 <Map />
@@ -32,4 +33,4 @@ export default function Header() {
             </div>
         </section >
     );
-}
+};;;
