@@ -7,7 +7,7 @@ export default function Header() {
         <section className="footer flex column space-around">
             <section className="footer-details flex space-between">
                 <div className="flex  align-center">
-                    <h1>Logo</h1>
+                    <img className="footer-logo" src="https://res.cloudinary.com/artyompogosov/image/upload/v1578217201/lh8zckfvjyil7jeqz1yo.png" />
                 </div>
                 <div className="flex column space-between">
                     <div className="office-details flex column align-center justify-center">

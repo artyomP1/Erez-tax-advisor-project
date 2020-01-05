@@ -17,7 +17,7 @@ class Header extends React.Component {
         return (
             <section className="header flex space-between">
                 <div>
-                    <Link to="/">Erez</Link>
+                    <Link to="/"><img className="header-logo" src="https://res.cloudinary.com/artyompogosov/image/upload/v1578216837/bcehmx06woctjeqhbo1h.png" /></Link>
                 </div>
                 <i className={className} onClick={this.getOpenMenu} className="fa fa-bars"></i>
                 <div className={className} onClick={this.getOpenMenu}></div>

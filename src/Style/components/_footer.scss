@@ -1,10 +1,17 @@
 .footer {
   height: 100%;
   padding: 50px;
+  h5 {
+    color: white !important;
+  }
 }
 
 .office-details {
   font-size: 1.7rem;
+}
+
+.footer-logo {
+  width: 200px;
 }
 
 // .footer-details {
@@ -21,5 +28,5 @@
 
 .App-footer {
   height: 500px;
-  background-color: rgb(184, 184, 184);
+  background-color: #2a2630;
 }

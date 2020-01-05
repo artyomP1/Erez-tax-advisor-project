@@ -1,11 +1,24 @@
 .header {
-  padding: 20px 50px;
+  padding: 0 50px;
+}
+
+.header-logo {
+  width: 150px;
 }
 
 .nav-bar {
+  align-items: center;
   a {
     font-size: 1.5rem;
-    padding-right: 20px;
+    margin-right: 20px;
+  }
+
+  a:hover {
+    border-bottom: 2px solid $clr0;
+    color: $clr0;
+  }
+  a:active {
+    color: $clr0 !important;
   }
 }
 
@@ -96,4 +109,14 @@
     visibility: visible;
     opacity: 0.5;
   }
+}
+
+.App-header {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 101;
+  background-color: white;
+  opacity: 0.9;
 }
