@@ -1,5 +1,5 @@
 import React from "react";
-import Map from "./Map";
+
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -25,7 +25,7 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <Map />
+
             </section>
             <div className="flex space-between">
                 <h5>זכויות יוצרים © 2019 ארז צור - יועץ מס ופיננסים </h5>

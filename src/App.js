@@ -7,6 +7,7 @@ import OurServiceDetails from "./Pages/OurServiceDetails.jsx";
 import ContactUs from "./Pages/ContactUs.jsx";
 import AsaidContactUs from "./Cmps/AsaidContactUs";
 import Header from "./Cmps/Header";
+import Modal from "./Cmps/Modal.jsx";
 import Footer from "./Cmps/Footer";
 import "./Style/global.scss";
 
@@ -19,6 +20,7 @@ class App extends Component {
         <header className="App-header">
           <Header />
         </header>
+        <Modal />
         <Switch className="main">
           <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={About} />

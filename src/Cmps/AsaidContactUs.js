@@ -1,20 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "antd/dist/antd.css";
-import {
-    Form,
-    Input,
-    select,
-    Icon,
-    Cascader,
-    Select,
-    Row,
-    Col,
-    Checkbox,
-    Button,
-    AutoComplete
-} from "antd";
-import FormItem from "antd/lib/form/FormItem";
+import { Select } from "antd";
+
 class AsaidContactUs extends React.Component {
 
     state = {
@@ -43,24 +31,28 @@ class AsaidContactUs extends React.Component {
 
                 <div className={className}>
                     <section id="contact">
-                        <h4>Contact Me</h4>
+                        <h2>מלאו את הטופס ונחזור אליך בהקדם</h2>
                         <form
                             className="asaid-form align-center flex column"
                             onSubmit={this.handleSubmit}
+                            action="https://formsubmit.co/artyomp@outlook.com" method="POST"
                         >
 
                             <div className="flex column space-between">
                                 <input
+                                    name="שם"
                                     placeholder="* שם מלא"
                                     value={this.state.name}
                                     onChange={this.handleChange}
                                 />
                                 <input
+                                    name="טלפון"
                                     placeholder="* טלפון"
                                     value={this.state.tel}
                                     onChange={this.handleChange}
                                 />
                                 <input
+                                    name="מייל"
                                     placeholder="* מייל"
                                     type="email"
                                     value={this.state.tel}
@@ -68,6 +60,7 @@ class AsaidContactUs extends React.Component {
                                 />
 
                                 <Select
+                                    name="נושא"
                                     mode="multiple"
                                     style={{ width: "100%" }}
                                     placeholder="בחר נושא"
@@ -83,6 +76,7 @@ class AsaidContactUs extends React.Component {
                                     <Option value="דוחות שנתיים">דוחות שנתיים</Option>
                                 </Select>
                                 <textarea
+                                    name="הודעה"
                                     placeholder="תוכן הפנייה"
                                     rows="6"
                                     cols="50"

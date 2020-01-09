@@ -57,7 +57,7 @@ class HomePage extends React.Component {
             יחס אישי, מקצועיות ואכפתיות.
           </p>
         </div>
-        <div className="services-list flex column align-center">
+        <div className="services-list">
           <h1>השירותים שלנו</h1>
           <ServicesList ourServices={ourServices} />
         </div>

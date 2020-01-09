@@ -9,11 +9,7 @@ export default function(props) {
       <div className="ourService-details">
         <h2> {ourService.name}</h2>
       </div> */}
-      <Card
-        hoverable
-        style={{ width: 240 }}
-        cover={<img alt="example" src={ourService.imgUrl} />}
-      >
+      <Card hoverable cover={<img alt="example" src={ourService.imgUrl} />}>
         <h2> {ourService.name}</h2>
       </Card>
     </div>
