@@ -86,3 +86,14 @@
   transition: opacity 0.3s;
   z-index: 100;
 }
+
+@media (max-width: 830px) {
+  .contact-us {
+    padding-bottom: 30px;
+
+    h2,
+    h3 {
+      padding: 0 20px;
+    }
+  }
+}

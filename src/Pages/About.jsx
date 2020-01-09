@@ -1,9 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
-
+import ContactUsForm from "../Cmps/ContactUsForm.jsx";
 class About extends React.Component {
   render() {
-    return <h1>About</h1>;
+    return (
+      <section>
+        <ContactUsForm />
+      </section>
+    );
   }
 }
 
