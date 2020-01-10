@@ -71,3 +71,20 @@ textarea {
     }
   }
 }
+
+@media (max-width: 500px) {
+  .main-form {
+    height: 400px;
+    width: 100%;
+
+    input {
+      width: 300px;
+      margin-bottom: 5px;
+    }
+    .textarea {
+      width: 300px !important;
+      display: flex;
+      margin-right: 0;
+    }
+  }
+}

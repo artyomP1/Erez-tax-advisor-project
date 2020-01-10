@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-
 import Map from "../Cmps/Map";
+import ContactUsForm from "../Cmps/ContactUsForm";
 
 class ContactUs extends React.Component {
   constructor(props) {
@@ -38,7 +38,11 @@ class ContactUs extends React.Component {
             <p>נייד: 052-603-6402</p>
             <p>דוא"ל: erez.tax@gmail.com </p>
           </div>
-          <form
+          <div>
+            <h3>מלאו את הטופס ונחזור אליך בהקדם</h3>
+            <ContactUsForm />
+          </div>
+          {/* <form
             className="asaid-form align-center flex column"
             onSubmit={this.handleSubmit}
             action="https://formsubmit.co/artyomp@outlook.com"
@@ -92,8 +96,10 @@ class ContactUs extends React.Component {
               />
             </div>
             <input className="send-ms-btn" type="submit" value="שלח" />
-          </form>
-          <Map />
+          </form> */}
+        </div>
+        <div className="map-container flex">
+          <Map className="map flex" />
         </div>
       </section>
     );

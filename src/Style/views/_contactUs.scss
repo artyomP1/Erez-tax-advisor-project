@@ -20,3 +20,23 @@
     }
   }
 }
+.map-container {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.map {
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  .contact-container-page {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    div {
+      width: 90%;
+      justify-content: center;
+    }
+  }
+}
