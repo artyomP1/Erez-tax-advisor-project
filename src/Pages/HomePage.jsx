@@ -58,7 +58,7 @@ class HomePage extends React.Component {
           </p>
         </div>
         <div className="services-list">
-          <h1>השירותים שלנו</h1>
+          <h1>שירותי המשרד</h1>
           <ServicesList ourServices={ourServices} />
         </div>
         <div className="contact-us">
