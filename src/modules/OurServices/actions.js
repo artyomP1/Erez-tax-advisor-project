@@ -8,6 +8,7 @@ const setCurrOurService = (ourService) => {
 export const loadCurrService = (id) => {
     return async (dispatch) => {
         const ourService = await OurServicesService.getServiceById(id);
+        console.log(ourService);
         return dispatch(setCurrOurService(ourService));
     };
 };
@@ -29,7 +30,7 @@ const setServices = (ourServices) => {
 
 export const loadServices = () => {
     return async (dispatch) => {
-        const OurService = await OurServicesService.query();
-        return dispatch(setServices(OurService));
+        const ourService = await OurServicesService.query();
+        return dispatch(setServices(ourService));
     };
 };

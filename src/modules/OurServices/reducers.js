@@ -2,7 +2,7 @@ import { combineReducers } from "redux";
 
 const INITIAL_STATE = {
     currOurService: null,
-    OurServices: []
+    ourServices: []
 };
 
 
@@ -14,6 +14,7 @@ export default function ourServiceReducer(state = INITIAL_STATE, action) { //act
 
                 ...state,
                 currOurService: action.ourService
+
             };
         case 'SET_OUR_SERVICES':
             return {

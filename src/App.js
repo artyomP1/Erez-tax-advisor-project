@@ -10,7 +10,7 @@ import Header from "./Cmps/Header";
 import Modal from "./Cmps/Modal.jsx";
 import Footer from "./Cmps/Footer";
 import "./Style/global.scss";
-
+import ScrollToTop from './Cmps/ScrollToTop';
 class App extends Component {
   render() {
     return (
@@ -21,13 +21,15 @@ class App extends Component {
           <Header />
         </header>
         <Modal />
+        <ScrollToTop />
         <Switch className="main">
           <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/ourServices" component={OurServices} />
-          <Route exact path="/ourServices/:id" component={OurServiceDetails} />
+          <Route exact path="/service" component={OurServices} />
+          <Route exact path="/service/:id" component={OurServiceDetails} />
           <Route exact path="/contactUs" component={ContactUs} />
         </Switch>
+
         <section className="App-footer">
           <Footer />
         </section>

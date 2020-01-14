@@ -1,16 +1,18 @@
 import React, { Component } from "react";
-import OurServicesService from "../modules/OurServices/OurServices.Service";
+// import OurServicesService from "../modules/OurServices/OurServices.Service";
 import { Link } from "react-router-dom";
 import { loadCurrService } from "../modules/OurServices/actions";
 import { connect } from "react-redux";
+import ContactUsForm from "../Cmps/ContactUsForm.jsx";
 
 class OurServiceDetails extends Component {
   state = {
     ourService: {}
   };
   async componentDidMount() {
-    const { _id } = this.props.match.params;
-    await this.props.loadCurrService(_id);
+    const id = await this.props.match.params;
+    console.log(id);
+    await this.props.loadCurrService(id.id);
   }
 
   render() {
@@ -18,7 +20,39 @@ class OurServiceDetails extends Component {
     if (ourService)
       return (
         <section>
-          <h1>{ourService.name}</h1>
+          <div className="title-img">
+            <img className="service-page-img" src={ourService.imgPageUrl} />
+            <h1>{ourService.name}</h1>
+          </div>
+          <h2 className="page-title">{ourService.name}-</h2>
+          <section className="ourServicePage">
+            {ourService.text.mainTxt.map(txt => {
+              return <p key={txt.idx}>{txt}.</p>;
+            })}
+
+            {ourService.text.bodyTxt.map(txt => {
+              return (
+                <div>
+                  <p>{txt.header}</p>
+                  <ul>
+                    {txt.body.map(txt => {
+                      return (
+                        <li className="info-service-list" key={txt.idx}>
+                          {txt}.
+                        </li>
+                      );
+                    })}
+                  </ul>
+                  <p>{txt.moreTxt}.</p>
+                </div>
+              );
+            })}
+          </section>
+          <div className="form-service-page flex column">
+            <h2>רוצים לשמוע עוד על {ourService.name}?</h2>
+            <h3> חייגו 052-603-6402 או השאירו פרטים ונחזור אליכם בהקדם </h3>
+            <ContactUsForm />
+          </div>
         </section>
       );
     else
@@ -32,7 +66,7 @@ class OurServiceDetails extends Component {
 
 const mapStateToProps = state => {
   return {
-    ourService: state.OurService.currOurService
+    ourService: state.ourService.currOurService
   };
 };
 
