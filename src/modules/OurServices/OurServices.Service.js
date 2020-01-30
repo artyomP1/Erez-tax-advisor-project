@@ -1,3 +1,10 @@
+import React from 'react';
+
+import axios from 'axios';
+axios.defaults.withCredentials = true;
+
+
+
 export default {
     getServiceById,
     // deleteContact,
@@ -6,20 +13,38 @@ export default {
     query
 };
 
+const BASE_URL = (process.env.NODE_ENV !== 'development') ?
+    '/api/ourServices' :
+    '//localhost:3030/api/ourServices';
+
+
 
 
 function query() {
-    return Promise.resolve(OurServices);
-}
-
-
-function getServiceById(id) {
-    return new Promise((resolve, reject) => {
-        const ourService = OurServices.find(ourService => ourService._id === id);
-        console.log(ourService);
-        ourService ? resolve(ourService) : reject(`service id ${id} not found!`);
+    return axios.get(BASE_URL).then(res => {
+        return res.data;
     });
 }
+
+// function query() {
+//     return Promise.resolve(OurServices);
+// }
+
+
+function getServiceById(_id) {
+    return axios.get(`${BASE_URL}/${_id}`)
+        .then(ourService => {
+            return ourService.data;
+        });
+}
+
+// function getServiceById(id) {
+//     return new Promise((resolve, reject) => {
+//         const ourService = OurServices.find(ourService => ourService._id === id);
+//         console.log(ourService);
+//         ourService ? resolve(ourService) : reject(`service id ${id} not found!`);
+//     });
+// }
 
 // function deleteContact(id) {
 //     return new Promise((resolve, reject) => {
@@ -78,11 +103,11 @@ const OurServices = [{
     imgUrl: "https://res.cloudinary.com/artyompogosov/image/upload/v1578159227/b44vtbz3lvep7kvuwtou.jpg",
     imgPageUrl: "https://res.cloudinary.com/artyompogosov/image/upload/v1578836738/qtey3wh59bj2akcspces.jpg",
     text: {
-        mainTxt: [],
+        mainTxt: ['על פי פקודת מס הכנסה חובה על המעביד לנכות תשלומים למס הכנסה משכרו של העובד בכל חודש. למרות שהניכויים למס הכנסה מתבצעים מדי חודש בחודשו, חישוב המס הוא שנתי. במהלך השנה לעיתים מנוכים סכומים גבוהים מאלו שאנחנו אמורים לשלם ומנגד לא מובאים בחשבון נתונים שונים שמשפיעים על חישוב המס', 'מרבית השכירים נמנעים מלממש את זכותם לדרוש ממס הכנסה את הסכומים שנגבו מהם ביתר, וזאת לרוב בגלל ההליך הבירוקרטי, הן מול רשות המסים והן בשלב איסוף המסמכים הרלוונטיים הנדרשים לתהליך (טפסי 106, אישורים שונים ועוד). את החזר המס ניתן לדרוש עד 6 שנים אחורה'],
         bodyTxt: [{
-            header: '',
-            body: [],
-            moreTxt: ""
+            header: 'הסיבות העיקריות להחזר מס:',
+            body: ["עבודה לא רציפה והחלפת מקום עבודה", "אבטלה", "משיכת פיצויים ופרישה מהעבודה", "הפקדות עצמאיות לקופת גמל/ פנסיה/ ביטוח חיים/ אובדן כושר עבודה", "השקעה בשוק ההון", "ילד נטול יכולת/ לקוי למידה", "תרומות", "סיום תואר אקדמאי"],
+            moreTxt: "השירות הייחודי שמציע משרדנו בתחום החזרי המס הוא אפשרות לחסוך מכם לחלוטין את התהליך הבירוקראטי. אם תרצו - אנחנו נעשה בשבילכם את כל העבודה, ואתם רק תחכו שהכסף ייכנס לחשבון! "
 
         }],
 
@@ -132,7 +157,7 @@ const OurServices = [{
     imgUrl: "https://res.cloudinary.com/artyompogosov/image/upload/v1578158617/xjgy0zrh7kqxbfdnqxqs.jpg",
     imgPageUrl: "https://res.cloudinary.com/artyompogosov/image/upload/v1578836513/b7g0pqzwqaszkjei4m1j.jpg",
     text: {
-        mainTxt: [],
+        mainTxt: ["מרגישים שכללי מס הכנסה הם סינית? אתם לא לבד", "חוקי מס הכנסה הם לא שחור ולבן, הם מעורפלים, מלאי פרשנויות וכתובים במונחים מקצועיים. בעל עסק שאינו יודע את דיני המס לא יכול לתכנן ולמקסם את הזכויות מול רשויות המס שלו ובכך עלול להפסיד הרבה כסף", "תכנון מס הוא למעשה שימוש יצירתי בחוקי המס, הנועד למקסם את הטבות המס במלואם ולהביא להפחתת שיעור המס של בעל העסק. לשם כך נדרש תכנון מקצועי ואינטגרציה בין תחומי מס שונים, תקנות, שימת לב לפרטים קטנים, יצירתיות, והכרות עם התקינה החשבונאית", "תכנון המס מתחיל כבר בתחילת העסק דרך פתיחת תיקים ברשויות המס, הגשת דוחות כספיים, הצהרות הון ובסוגיות מס שונים, ויכול למנוע טעויות מול רשויות המס שעלולת להוביל לקנסות וסנקציות", "משרדנו בעל ניסיון של 15 שנה הפועל בתכנון מס לעסק באופן שוטף.  אנחנו נוביל אותך לחבות מס נמוכה ולתוצאות מס טובות יותר עבור העסק שלך"],
         bodyTxt: [{
             header: '',
             body: [],

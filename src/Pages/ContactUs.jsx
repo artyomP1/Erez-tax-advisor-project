@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import Map from "../Cmps/Map";
 import ContactUsForm from "../Cmps/ContactUsForm";
-
+import { SocialIcon } from "react-social-icons";
 class ContactUs extends React.Component {
   constructor(props) {
     super(props);
@@ -37,6 +37,22 @@ class ContactUs extends React.Component {
             <p>כתובת המשרד: סטרומה 5, רמת גן 5255205 </p>
             <p>נייד: 052-603-6402</p>
             <p>דוא"ל: erez.tax@gmail.com </p>
+            <div>
+              <div className="social-icons flex">
+                <SocialIcon
+                  className="social facebook"
+                  url="https://www.facebook.com/pogosov"
+                />
+                <SocialIcon
+                  className="social linkedin"
+                  url="https://www.linkedin.com/in/artyom-p"
+                />
+                <SocialIcon
+                  className="social whatsapp"
+                  url="https://api.whatsapp.com/send?phone=972526036402&text=%20test"
+                />
+              </div>
+            </div>
           </div>
           <div>
             <h3>מלאו את הטופס ונחזור אליך בהקדם</h3>

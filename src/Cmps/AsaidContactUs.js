@@ -30,53 +30,60 @@ class AsaidContactUs extends React.Component {
                 </div>
 
                 <div className={className}>
-                    <section id="contact">
+                    <section id="contact"
+                    // className="kwes-form" 
+                    >
                         <h2>מלאו את הטופס ונחזור אליך בהקדם</h2>
                         <form
                             className="asaid-form align-center flex column"
                             onSubmit={this.handleSubmit}
-                            action="https://formsubmit.co/artyomp@outlook.com" method="POST"
+                        // action="https://formsubmit.co/artyomp@outlook.com" 
+                        // data-netlify="true" method="POST"
+                        // method="POST" action="https://kwes.io/api/foreign/forms/CuXhGtHt9qQOaeueTjag">
                         >
 
                             <div className="flex column space-between">
                                 <input
-                                    name="שם"
+                                    name="name"
                                     placeholder="* שם מלא"
                                     value={this.state.name}
                                     onChange={this.handleChange}
+                                    rules="required|max:255"
                                 />
                                 <input
-                                    name="טלפון"
+                                    name="phone"
                                     placeholder="* טלפון"
                                     value={this.state.tel}
                                     onChange={this.handleChange}
+                                    rules="required|max:255"
                                 />
                                 <input
-                                    name="מייל"
+                                    name="email"
                                     placeholder="* מייל"
                                     type="email"
                                     value={this.state.tel}
                                     onChange={this.handleChange}
+                                    rules="required"
                                 />
 
-                                <Select
-                                    name="נושא"
+                                <select
+                                    name="subject"
                                     mode="multiple"
                                     style={{ width: "100%" }}
                                     placeholder="בחר נושא"
 
                                 // onChange={handleChange}
                                 >
-                                    <Option value="הנהלת חשבונות">הנהלת חשבונות</Option>
-                                    <Option value="חשבות שכר">חשבות שכר</Option>
-                                    <Option value="הצהרת הון">הצהרות הון</Option>
-                                    <Option value="החזרי מס">החזרי מס</Option>
-                                    <Option value="תכנון מס">תכנון מס</Option>
-                                    <Option value="גיוס הון">גיוס הון</Option>
-                                    <Option value="דוחות שנתיים">דוחות שנתיים</Option>
-                                </Select>
+                                    <option value="הנהלת חשבונות">הנהלת חשבונות</option>
+                                    <option value="חשבות שכר">חשבות שכר</option>
+                                    <option value="הצהרת הון">הצהרות הון</option>
+                                    <option value="החזרי מס">החזרי מס</option>
+                                    <option value="תכנון מס">תכנון מס</option>
+                                    <option value="גיוס הון">גיוס הון</option>
+                                    <option value="דוחות שנתיים">דוחות שנתיים</option>
+                                </select>
                                 <textarea
-                                    name="הודעה"
+                                    name="msg"
                                     placeholder="תוכן הפנייה"
                                     rows="6"
                                     cols="50"
@@ -90,7 +97,7 @@ class AsaidContactUs extends React.Component {
 
                     </section>
 
-                </div> </section >
+                </div > </section >
         );
     }
 };

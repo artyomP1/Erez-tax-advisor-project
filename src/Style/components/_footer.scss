@@ -7,11 +7,14 @@
 }
 
 .office-details {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
+  color: #e75113;
 }
 
 .footer-logo {
-  width: 200px;
+  width: 250px;
+  height: 140px;
+  margin-bottom: 20px;
 }
 
 // .footer-details {
@@ -26,6 +29,30 @@
   height: 300px;
 }
 
+.social-svg-mask {
+  // fill: rgb(37, 211, 102);\
+  fill: rgb(189, 185, 185) !important;
+}
+
+.whatsapp .social-svg-mask:hover {
+  fill: rgb(37, 211, 102) !important;
+}
+
+.linkedin .social-svg-mask:hover {
+  fill: rgb(0, 127, 177) !important;
+}
+.facebook .social-svg-mask:hover {
+  fill: rgb(59, 89, 152) !important;
+}
+
+.social-icons {
+  justify-content: center;
+  a {
+    margin-left: 10px;
+    height: 35px !important;
+    width: 35px !important;
+  }
+}
 .App-footer {
   height: 500px;
   background-color: #011627;
@@ -45,6 +72,9 @@
 }
 
 @media (max-width: 830px) {
+  .social-icons {
+    flex-direction: row !important;
+  }
   .App-footer {
     height: 600px;
   }

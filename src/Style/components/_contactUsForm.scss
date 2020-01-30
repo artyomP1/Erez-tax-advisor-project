@@ -1,11 +1,25 @@
 .main-form {
   padding-bottom: 20px;
   height: 270px;
+  input {
+    height: 50px;
+  }
 }
-
+.send-ms-btn {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+}
+.kw-field-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .main-inputs {
-  height: 250px;
-  padding-bottom: 30px;
+  justify-content: center;
+  height: 195px;
+  padding-bottom: 10px;
   ::placeholder {
     padding: 10px;
     font-size: 1.2rem;
@@ -14,6 +28,9 @@
 
 .textarea {
   margin-right: 20px;
+  select {
+    height: 40px;
+  }
 }
 textarea {
   border-radius: 5px;

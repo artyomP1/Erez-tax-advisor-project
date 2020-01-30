@@ -1,5 +1,5 @@
 import React from "react";
-
+import { SocialIcon } from 'react-social-icons';
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -36,7 +36,12 @@ export default function Header() {
 
 
             </section>
-            <div className="flex space-between">
+            <div className="social-icons flex">
+                <SocialIcon className="social facebook" url="https://www.facebook.com/pogosov" />
+                <SocialIcon className="social linkedin" url="https://www.linkedin.com/in/artyom-p" />
+                <SocialIcon className="social whatsapp" url="https://api.whatsapp.com/send?phone=972526036402&text=%20test" />
+            </div>
+            <div className="flex  space-between">
                 <h5>זכויות יוצרים © 2019 ארז צור - יועץ מס ופיננסים </h5>
                 <h5>האתר פותח על ידי ארטיום פוגוסוב </h5>
             </div>

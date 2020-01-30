@@ -21,11 +21,11 @@ class HomePage extends React.Component {
     return (
       <section>
         <div>
-          {/* <img
+          <img
             className="main-img"
-            src="https://res.cloudinary.com/artyompogosov/image/upload/v1577871888/zaf6e7dlhir08vdjit5u.jpg"
-          /> */}
-          <Carousel autoplay>
+            src="https://res.cloudinary.com/artyompogosov/image/upload/v1580384841/is52lb4lcwkzb5texhey.jpg"
+          />
+          {/* <Carousel autoplay>
             <div>
               <img
                 className="img-carousel"
@@ -47,15 +47,36 @@ class HomePage extends React.Component {
                 alt=""
               />
             </div>
-          </Carousel>
+          </Carousel> */}
         </div>
         <div className="about-erez flex column justify-center align-center">
           <h2 className="">משרד ארז צור -ייעוץ מס ופיננסים</h2>
           <p>
             משרד ייעוץ מס ופיננסים נותן שירותי הנהלת חשבונות, חשבות שכר וייעוץ
-            מס כבר 15 שנה, המשרד נותן שירותים לחברותת עצמאים ושכיריםתוך הקדפה על
-            יחס אישי, מקצועיות ואכפתיות.
+            מס כבר 15 שנה, המשרד נותן שירותים לחברות, עצמאים ושכירים תוך הקדפה
+            על יחס אישי, מקצועיות ואכפתיות.
           </p>
+          <ul className="top-serveice flex">
+            <li>
+              <i className="fa fa-certificate"></i>
+              <span>מקצועיות</span>
+            </li>
+            <li>
+              {" "}
+              <i className="fa fa-handshake-o"></i>
+              <span>שירות אישי</span>{" "}
+            </li>
+            <li>
+              {" "}
+              <i className="fa fa-file-image-o"></i>
+              <span>שקיפות</span>
+            </li>
+            <li>
+              {" "}
+              <i className="fa fa-hourglass-start"></i>
+              <span>זמינות</span>
+            </li>
+          </ul>
         </div>
         <div className="services-list">
           <h1>שירותי המשרד</h1>
