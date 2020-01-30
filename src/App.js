@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import HomePage from "./Pages/HomePage.jsx";
 import About from "./Pages/About.jsx";
 import OurServices from "./Pages/OurServices.jsx";
+import ProfessionalInfo from "./Pages/ProfessionalInfo.jsx";
 import OurServiceDetails from "./Pages/OurServiceDetails.jsx";
 import ContactUs from "./Pages/ContactUs.jsx";
 import AsaidContactUs from "./Cmps/AsaidContactUs";
@@ -27,6 +28,7 @@ class App extends Component {
           <Route exact path="/about" component={About} />
           <Route exact path="/service" component={OurServices} />
           <Route exact path="/service/:id" component={OurServiceDetails} />
+          <Route exact path="/info" component={ProfessionalInfo} />
           <Route exact path="/contactUs" component={ContactUs} />
         </Switch>
 

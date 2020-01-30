@@ -39,7 +39,7 @@ export default function Header() {
             <div className="social-icons flex">
                 <SocialIcon className="social facebook" url="https://www.facebook.com/pogosov" />
                 <SocialIcon className="social linkedin" url="https://www.linkedin.com/in/artyom-p" />
-                <SocialIcon className="social whatsapp" url="https://api.whatsapp.com/send?phone=972526036402&text=%20test" />
+                <SocialIcon className="social whatsapp" url="https://api.whatsapp.com/send?phone=972526036402&text=%20 שלום, אשמח לקבל ייעוץ" />
             </div>
             <div className="flex  space-between">
                 <h5>זכויות יוצרים © 2019 ארז צור - יועץ מס ופיננסים </h5>

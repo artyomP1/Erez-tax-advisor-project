@@ -29,7 +29,7 @@ class Header extends React.Component {
                         <Link onClick={this.getOpenMenu} to="/">ראשי</Link>
                         <Link onClick={this.getOpenMenu} to="/about">אודות</Link>
                         <Link onClick={this.getOpenMenu} to="/ourServices">שירותים</Link>
-                        <Link onClick={this.getOpenMenu} to="/ourServices">מידע מקצועי</Link>
+                        <Link onClick={this.getOpenMenu} to="/info">מידע מקצועי</Link>
                         <Link onClick={this.getOpenMenu} to="/contactUs">צור קשר</Link>
                     </div ></div>
             </section >

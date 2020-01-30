@@ -53,28 +53,38 @@ class HomePage extends React.Component {
           <h2 className="">משרד ארז צור -ייעוץ מס ופיננסים</h2>
           <p>
             משרד ייעוץ מס ופיננסים נותן שירותי הנהלת חשבונות, חשבות שכר וייעוץ
-            מס כבר 15 שנה, המשרד נותן שירותים לחברות, עצמאים ושכירים תוך הקדפה
-            על יחס אישי, מקצועיות ואכפתיות.
+            מס כבר 15 שנה, המשרד נותן שירותים לחברות, עצמאים ושכירים תוך הקפדה
+            על-
           </p>
           <ul className="top-serveice flex">
             <li>
-              <i className="fa fa-certificate"></i>
-              <span>מקצועיות</span>
+              <div className="flex column align-center">
+                <i className="fa fa-certificate"></i>
+                <span>מקצועיות</span>
+              </div>
             </li>
             <li>
               {" "}
-              <i className="fa fa-handshake-o"></i>
-              <span>שירות אישי</span>{" "}
+              <div className="flex column align-center">
+                <i className="fa fa-handshake-o"></i>
+                <span>שירות אישי</span>{" "}
+              </div>
             </li>
             <li>
               {" "}
-              <i className="fa fa-file-image-o"></i>
-              <span>שקיפות</span>
+              <div className="flex column align-center">
+                {" "}
+                <i className="fa fa-file-image-o"></i>
+                <span>שקיפות</span>
+              </div>
             </li>
             <li>
               {" "}
-              <i className="fa fa-hourglass-start"></i>
-              <span>זמינות</span>
+              <div className="flex column align-center">
+                {" "}
+                <i className="fa fa-hourglass-start"></i>
+                <span>זמינות</span>
+              </div>
             </li>
           </ul>
         </div>

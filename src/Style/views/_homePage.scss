@@ -93,6 +93,11 @@
   width: 80%;
   justify-content: space-around;
   font-size: 2rem;
+  flex-wrap: wrap;
+  padding-right: 0;
+  div {
+    margin: 10px;
+  }
   i {
     margin-left: 5px;
     color: $clr0;

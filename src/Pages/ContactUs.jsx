@@ -49,7 +49,7 @@ class ContactUs extends React.Component {
                 />
                 <SocialIcon
                   className="social whatsapp"
-                  url="https://api.whatsapp.com/send?phone=972526036402&text=%20test"
+                  url="https://api.whatsapp.com/send?phone=972526036402&text=%20 שלום, אשמח לקבל ייעוץ"
                 />
               </div>
             </div>
