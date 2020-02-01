@@ -4,20 +4,20 @@ import axios from 'axios';
 
 const BASE_URL = process.env.NODE_ENV === 'production' ?
     '/api/' :
-    '//localhost:3000/api/';
+    '//localhost:3030/api/';
 
 
-import Axios from 'axios';
-var axios = Axios.create({
-    withCredentials: true
-});
-var axiosNoCredentials = Axios.create({
-    withCredentials: false
-});
+// import Axios from 'axios';
+// var axios = Axios.create({
+//     withCredentials: true
+// });
+// var axiosNoCredentials = Axios.create({
+//     withCredentials: false
+// });
 
 
 export default {
-    axiosNoCredentials: axiosNoCredentials,
+    // axiosNoCredentials: axiosNoCredentials,
     get(endpoint, data) {
         return ajax(endpoint, 'GET', data);
     },
@@ -43,7 +43,7 @@ async function ajax(endpoint, method = 'get', data = null) {
         return res.data;
     } catch (err) {
         if (err.response.status === 401) {
-            router.push('/');
+            // router.push('/');
         }
     }
 

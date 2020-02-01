@@ -20,10 +20,21 @@ class HomePage extends React.Component {
 
     return (
       <section>
-        <div>
+        <div className="main-img-home">
           <img
             className="main-img"
-            src="https://res.cloudinary.com/artyompogosov/image/upload/v1580384841/is52lb4lcwkzb5texhey.jpg"
+            src="https://res.cloudinary.com/artyompogosov/image/upload/v1580576871/g88lx42h9qqwlzefwzfo.jpg"
+          />
+          <img
+            className="logo-main"
+            src="https://res.cloudinary.com/artyompogosov/image/upload/v1580577361/qmm05ijrwrd4lyuwugsm.png"
+          />
+          {/* <div className="logo-main">
+            משרד ארז צור - הנהלת חשבונות וייעוץ מס
+          </div> */}
+          <img
+            className="logo-main"
+            src="https://res.cloudinary.com/artyompogosov/image/upload/v1580576748/rfyuvjhys2ujsqvzozfy.png"
           />
           {/* <Carousel autoplay>
             <div>

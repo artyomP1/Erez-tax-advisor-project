@@ -6,7 +6,7 @@
   }
 }
 .send-ms-btn {
-  border: none;
+  border: none !important;
   outline: none;
   border-radius: 5px;
   color: white;
@@ -54,6 +54,17 @@ textarea {
     width: 350px;
     border: 1.5px solid rgb(210, 215, 216);
     outline: none;
+  }
+  select {
+    height: 50px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(210, 215, 216);
+    outline: none;
+    option {
+      padding: 10px;
+      font-size: 1.2rem;
+    }
   }
   h2 {
     font-size: 3rem;

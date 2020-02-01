@@ -1,9 +1,11 @@
 .header {
   padding: 0 50px;
+  justify-content: center;
 }
 
 .header-logo {
   width: 150px;
+  margin-left: 20px;
 }
 
 .nav-bar-links {
@@ -12,7 +14,8 @@
 
 .nav-bar {
   align-items: center;
-  width: 60%;
+  // height: 100%;
+  // width: 60%;
   div {
     width: 100%;
     justify-items: flex-start;
@@ -21,13 +24,24 @@
     }
   }
   a {
+    height: 100%;
     font-size: 1.5rem;
+    color: #626262;
+    font-family: "Frank Ruhl Libre", serif;
     // margin-right: 20px;
     border-bottom: 2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    // ::after {
+    border-right: 1px solid #626262;
+    // }
+  }
+  .nav-bar > a:first-child {
+    border: none;
   }
 
   a:hover {
-    border-bottom: 2px solid $clr0;
+    // border-bottom: 2px solid $clr0;
     color: $clr0;
   }
   a:active {
