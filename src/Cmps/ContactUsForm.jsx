@@ -58,7 +58,7 @@ class ContactUsForm extends React.Component {
           onSubmit={this.handleSubmit}
         >
           <div className="main-inputs flex">
-            <div className="flex column space-between">
+            <div className="inputs flex column space-between">
               <input
                 name="name"
                 placeholder="* שם מלא"

@@ -3,7 +3,13 @@ import { connect } from "react-redux";
 import ServicesList from "../modules/OurServices/ServicesList";
 import ContactUsForm from "../Cmps/ContactUsForm.jsx";
 import OurServicesService from "../modules/OurServices/OurServices.Service";
-import { Carousel } from "antd";
+import { Link } from "react-router-dom";
+// import Carousel from "../Cmps/Carousel";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import Carousel from "react-bootstrap/Carousel";
+import Maslul from "../Cmps/Maslul";
+// import { Carousel } from "antd";
 class HomePage extends React.Component {
   state = {
     ourServices: []
@@ -22,43 +28,58 @@ class HomePage extends React.Component {
       <section>
         <div className="main-img-home">
           <img
-            className="main-img"
-            src="https://res.cloudinary.com/artyompogosov/image/upload/v1580576871/g88lx42h9qqwlzefwzfo.jpg"
-          />
-          <img
-            className="logo-main"
-            src="https://res.cloudinary.com/artyompogosov/image/upload/v1580577361/qmm05ijrwrd4lyuwugsm.png"
-          />
-          {/* <div className="logo-main">
-            משרד ארז צור - הנהלת חשבונות וייעוץ מס
-          </div> */}
-          <img
             className="logo-main"
             src="https://res.cloudinary.com/artyompogosov/image/upload/v1580576748/rfyuvjhys2ujsqvzozfy.png"
           />
-          {/* <Carousel autoplay>
-            <div>
+          <Carousel fade="true">
+            <Carousel.Item>
               <img
                 className="img-carousel"
-                src="https://res.cloudinary.com/artyompogosov/image/upload/v1578156229/pkwxnjnca3ozf7rgkkpt.jpg"
-                alt=""
+                src="https://res.cloudinary.com/artyompogosov/image/upload/v1581767554/aoobsr5n5qld6rqr4vzz.jpg"
+                alt="מלווים אותך להצלחה"
               />
-            </div>
-            <div>
+
+              <Carousel.Caption>
+                <h1>משרד ארז צור</h1>
+                <p>מלווים אותך להצלחה</p>
+                <Link to="/contactUs">
+                  {" "}
+                  <button>לתיאום פגישת ייעוץ</button>
+                </Link>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
               <img
                 className="img-carousel"
-                src="https://res.cloudinary.com/artyompogosov/image/upload/v1578156840/poys6igemn36h8achd8x.jpg"
-                alt=""
+                src="https://res.cloudinary.com/artyompogosov/image/upload/v1581767578/rejyourmupwnqrtuydrg.jpg"
+                alt="נותנים לך ראש שקט"
               />
-            </div>
-            <div>
+
+              <Carousel.Caption>
+                <h1>משרד ארז צור</h1>
+                <p>נותנים לך ראש שקט</p>
+                <Link to="/contactUs">
+                  {" "}
+                  <button>לתיאום פגישת ייעוץ</button>
+                </Link>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
               <img
                 className="img-carousel"
-                src="https://res.cloudinary.com/artyompogosov/image/upload/v1578156292/saswokwfqyboapxhd7ad.jpg"
-                alt=""
+                src="https://res.cloudinary.com/artyompogosov/image/upload/v1581767585/fp6pr0tvrazlvepx4b4v.jpg"
+                alt="איתך כל הדרך לפסגה"
               />
-            </div>
-          </Carousel> */}
+              <Carousel.Caption>
+                <h1>משרד ארז צור</h1>
+                <p>איתך כל הדרך לפסגה</p>
+                <Link to="/contactUs">
+                  {" "}
+                  <button>לתיאום פגישת ייעוץ</button>
+                </Link>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
         </div>
         <div className="about-erez flex column justify-center align-center">
           <h2 className="">משרד ארז צור -ייעוץ מס ופיננסים</h2>
@@ -85,14 +106,6 @@ class HomePage extends React.Component {
               {" "}
               <div className="flex column align-center">
                 {" "}
-                <i className="fa fa-file-image-o"></i>
-                <span>שקיפות</span>
-              </div>
-            </li>
-            <li>
-              {" "}
-              <div className="flex column align-center">
-                {" "}
                 <i className="fa fa-hourglass-start"></i>
                 <span>זמינות</span>
               </div>
@@ -100,9 +113,16 @@ class HomePage extends React.Component {
           </ul>
         </div>
         <div className="services-list">
-          <h1>שירותי המשרד</h1>
+          <div className="services-article">
+            <div></div>
+            <h1>שירותי המשרד</h1>
+            <div></div>
+          </div>
           <ServicesList ourServices={ourServices} />
         </div>
+        <section className="main-page-maslulim">
+          <Maslul />
+        </section>
         <div className="contact-us">
           <h2>
             מעוניינים בייעוץ ללא עלות <span>?</span>

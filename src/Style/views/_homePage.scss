@@ -10,14 +10,56 @@
 
 .img-carousel {
   width: 100%;
-  height: 500px;
+  max-height: 90vh;
+}
+.carousel-caption {
+  display: flex;
+  top: 10%;
+  right: 7%;
+  padding-right: 10px;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  h1 {
+    font-size: 40px !important;
+    text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.9);
+    font-weight: 1100 !important;
+    color: #ffffff;
+    font-family: "Open Sans bold";
+  }
+  p {
+    font-size: 30px !important;
+    text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    font-family: "Open Sans , sans-serif";
+  }
+  button {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.9);
+    border: 2px solid #ffffff;
+    outline: none;
+    padding: 10px;
+    color: #ffffff;
+    font-family: "Open Sans , sans-serif";
+  }
+
+  button:hover {
+    box-shadow: 2px 2px 2px 2px rgba(143, 140, 140, 0.652);
+  }
 }
 
 .ant-row {
   margin-bottom: 0;
 }
 
+.main-page-maslulim {
+  margin-bottom: 80px;
+}
 .logo-main {
+  // display: none;
   width: 300px;
   position: absolute;
   top: 30%;
@@ -33,15 +75,31 @@
   left: 0;
 }
 
+.services-article {
+  display: flex;
+  height: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  div {
+    border-bottom: 1px solid black;
+    margin-bottom: 3.5%;
+    width: 30%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
 .services-list {
   // margin: 30px 0;
   //   justify-items: center;
   // background-color: rgba(231, 202, 147, 0.335);
-  background-image: url("https://res.cloudinary.com/artyompogosov/image/upload/v1580578518/x7ujqinu11rwrwytvojs.png");
-  background-repeat: repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  // background-image: url("https://res.cloudinary.com/artyompogosov/image/upload/v1580578518/x7ujqinu11rwrwytvojs.png");
+  // background-repeat: repeat; /* Do not repeat the image */
+  // background-size: cover; /* Resize the background image to cover the entire container */
   padding-bottom: 20px;
   h1 {
+    padding-bottom: 20px;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
@@ -52,10 +110,11 @@
 .about-erez {
   padding-top: 30px;
   padding-bottom: 30px;
+  // background-color: rgba(250, 175, 132, 0.335);
   h2 {
-    font-size: 3rem;
-    width: 80%;
-    text-align: center;
+    font-size: 3rem !important;
+    width: 80% !important;
+    text-align: center !important;
     // color: $clr0;
   }
 
@@ -79,7 +138,7 @@
   margin: auto;
   z-index: 101;
   h2 {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
   h3 {
     margin-bottom: 0;
@@ -142,7 +201,7 @@
 
     h2,
     h3 {
-      padding: 0 20px;
+      padding: 0 20px !important;
     }
   }
   .open.form-modal {

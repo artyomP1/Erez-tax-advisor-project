@@ -7,6 +7,8 @@ import ProfessionalInfo from "./Pages/ProfessionalInfo.jsx";
 import OurServiceDetails from "./Pages/OurServiceDetails.jsx";
 import ContactUs from "./Pages/ContactUs.jsx";
 import AsaidContactUs from "./Cmps/AsaidContactUs";
+import Maslulim from "./Pages/Maslulim";
+import Whatsapp from "./Cmps/Whatsapp";
 import Header from "./Cmps/Header";
 import Modal from "./Cmps/Modal.jsx";
 import Footer from "./Cmps/Footer";
@@ -18,6 +20,7 @@ class App extends Component {
       <div className="App">
 
         <AsaidContactUs />
+        <Whatsapp />
         <header className="App-header">
           <Header />
         </header>
@@ -28,6 +31,7 @@ class App extends Component {
           <Route exact path="/about" component={About} />
           <Route exact path="/service" component={OurServices} />
           <Route exact path="/service/:id" component={OurServiceDetails} />
+          <Route exact path="/maslulim" component={Maslulim} />
           <Route exact path="/info" component={ProfessionalInfo} />
           <Route exact path="/contactUs" component={ContactUs} />
         </Switch>

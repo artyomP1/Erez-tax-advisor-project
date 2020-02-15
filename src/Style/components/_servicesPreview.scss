@@ -12,8 +12,13 @@
     border-radius: 5px;
   }
   .ourService-details {
+    display: flex;
+
+    justify-content: center !important;
+
+    align-items: center !important ;
     margin-bottom: 0;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.7);
     width: 100%;
     height: 65px;
     // -webkit-filter: blur(4px);
@@ -26,13 +31,16 @@
     top: 89.5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: right;
+    // text-align: right;
     padding-right: 10px;
-    padding-bottom: 10px;
+    // padding-bottom: 10px;
   }
   p {
     display: none;
     padding: 5px;
+  }
+  h2 {
+    font-size: 1.5rem !important;
   }
 }
 .container-ourService:hover {
@@ -40,13 +48,15 @@
     display: block;
   }
   .ourService-details {
+    flex-direction: column;
     margin-bottom: 0;
-    background: rgba(192, 165, 165, 0.9);
+    // background: rgba(251, 163, 121, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     width: 100%;
     height: 100%;
     color: black;
 
-    font-size: 1rem;
+    font-size: 1.3rem !important;
 
     top: 50%;
     // left: 50%;
@@ -54,5 +64,8 @@
     padding: 10px;
     // padding-right: 10px;
     // padding-bottom: 10px;
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 }

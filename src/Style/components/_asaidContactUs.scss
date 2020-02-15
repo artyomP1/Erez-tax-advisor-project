@@ -22,6 +22,9 @@
   justify-content: space-around;
 }
 
+#contact {
+  margin-top: 60px;
+}
 .offcanvas-aside img {
   border-radius: 50%;
 }
@@ -42,13 +45,10 @@
   padding: 0;
   margin: 0;
 }
-.kw-field-wrapper {
-  padding-bottom: 10px;
-
-  width: 300px;
-
-  input.is-success-110293 {
-    border: #a6a6a6 1px solid;
+.asaid-form {
+  input {
+    border: #a6a6a6 1px solid !important;
+    outline: none;
   }
   textarea {
     width: 100%;
@@ -58,17 +58,23 @@
     border-radius: 5px;
     outline: none;
     border: #a6a6a6 1px solid;
+    height: 30px;
+    margin-bottom: 10px;
   }
+}
+input.send-ms-btn {
+  width: 70px !important;
+  border: none !important;
 }
 
 .asaid-form {
   input {
-    width: 100% !important;
+    // width: 100% !important;
     margin-bottom: 10px;
   }
   div,
   textarea {
     margin-bottom: 10px;
-    max-width: 300px;
+    max-width: 250px;
   }
 }

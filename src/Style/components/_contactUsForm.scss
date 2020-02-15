@@ -3,6 +3,8 @@
   height: 270px;
   input {
     height: 50px;
+    outline: none;
+    border: 1.5px solid #d2d7d8;
   }
 }
 .send-ms-btn {
@@ -20,16 +22,22 @@
   justify-content: center;
   height: 195px;
   padding-bottom: 10px;
-  ::placeholder {
-    padding: 10px;
-    font-size: 1.2rem;
+  .inputs {
+    justify-content: space-between !important;
   }
 }
 
 .textarea {
   margin-right: 20px;
   select {
-    height: 40px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1.5px solid #d2d7d8;
+    outline: none;
+    ::placeholder {
+      padding: 10px;
+      font-size: 1.2rem;
+    }
   }
 }
 textarea {
@@ -49,27 +57,31 @@ textarea {
 .contact-us {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   //   background-color: gray;
+
   input {
     height: 50px;
     width: 350px;
     border: 1.5px solid rgb(210, 215, 216);
     outline: none;
   }
-  select {
-    height: 50px;
-    width: 350px;
-    border-radius: 5px;
-    border: 1.5px solid rgb(210, 215, 216);
-    outline: none;
-    option {
-      padding: 10px;
-      font-size: 1.2rem;
+  .textarea {
+    select {
+      height: 50px;
+      width: 350px;
+      border-radius: 5px;
+      border: 1.5px solid rgb(210, 215, 216);
+      outline: none;
+
+      option {
+        padding: 10px;
+        font-size: 1.2rem;
+      }
     }
   }
   h2 {
-    font-size: 3rem;
-    padding-top: 20px;
-    text-align: center;
+    font-size: 3rem !important;
+    padding-top: 20px !important;
+    text-align: center !important;
   }
   h3 {
     text-align: center;
@@ -78,16 +90,33 @@ textarea {
     color: gray;
   }
 }
-
-@media (max-width: 800px) {
+.inputs {
+  width: 340px;
+}
+@media (max-width: 750px) {
+  .form-service-page {
+    align-items: center;
+    padding-top: 40px !important;
+    padding-bottom: 50px !important;
+  }
+  .send-ms-btn {
+    align-items: center;
+  }
   .main-inputs {
     flex-direction: column;
     height: 400px;
+    div {
+      width: 350px;
+    }
   }
+  .inputs {
+    width: 350px !important;
+  }
+
   .main-form {
     height: 400px;
     width: 100%;
-
+    align-items: center !important;
     input {
       width: 100%;
       margin-bottom: 5px;
@@ -96,6 +125,9 @@ textarea {
       width: 100% !important;
       display: flex;
       margin-right: 0;
+      select {
+        margin-bottom: 5px;
+      }
     }
   }
 }
@@ -104,15 +136,37 @@ textarea {
   .main-form {
     height: 400px;
     width: 100%;
+    h3 {
+      padding-bottom: 20px;
+    }
+    h2 {
+      padding-bottom: 50px !important;
+    }
+    .inputs {
+      width: 350px;
+    }
+    .textarea {
+      width: 350px !important;
+      display: flex;
+      margin-right: 0;
+    }
+  }
+}
 
-    input {
-      width: 300px;
-      margin-bottom: 5px;
+@media (max-width: 400px) {
+  .main-form {
+    height: 400px;
+    width: 100%;
+    align-items: center !important;
+    .inputs {
+      width: 300px !important;
+      // align-items: center;
     }
     .textarea {
       width: 300px !important;
       display: flex;
-      margin-right: 0;
+      // margin-right: 0;
+      // align-items: center;
     }
   }
 }

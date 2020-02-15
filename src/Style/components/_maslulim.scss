@@ -1,0 +1,63 @@
+.list-group-item {
+  padding: 6px 10px !important;
+}
+
+#des {
+  max-height: 80px !important;
+}
+
+.list-group-item {
+  border-bottom: none;
+}
+#maslul-link {
+  border-top: 1px solid gray;
+  height: 80px !important;
+  .card-link {
+    font-weight: bold;
+  }
+}
+.card-link:hover {
+  color: white !important;
+}
+
+.notforread {
+  color: rgba(255, 255, 255, 0);
+}
+
+.list-group-flush {
+  height: 850px !important;
+  background-color: white;
+}
+.card {
+  width: 30vw;
+  max-width: 350px;
+  font-size: 1rem;
+}
+.card-header {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.card-container {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  .card {
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  .card-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    min-width: 80%;
+    margin-bottom: 20px;
+  }
+  .card-container {
+    flex-wrap: wrap;
+  }
+}

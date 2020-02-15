@@ -3,9 +3,9 @@
   position: fixed;
   bottom: 8%;
   right: 1%;
-  height: 50px;
-  width: 50px;
-  background: $clr0;
+  height: 40px;
+  width: 40px;
+  background: rgba(255, 255, 255, 0);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -13,4 +13,29 @@
   cursor: pointer;
   margin-right: 0;
   transition: all 0.3s ease;
+  color: $clr0;
+  font-size: 40px;
+}
+
+#whatsapp-main.social-icon {
+  z-index: 99;
+  position: fixed !important;
+  left: 1% !important;
+  bottom: 8% !important;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  .social-svg-mask {
+    color: rgb(37, 211, 102) !important;
+    fill: rgb(37, 211, 102) !important;
+    font-size: 60px !important;
+  }
+}
+
+body {
+  font-family: "Assistant", sans-serif;
+}
+
+html {
+  font-family: "Open Sans , sans-serif";
 }
