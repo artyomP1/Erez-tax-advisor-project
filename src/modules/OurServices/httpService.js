@@ -3,8 +3,8 @@ import React from 'react';
 import axios from 'axios';
 
 const BASE_URL = process.env.NODE_ENV === 'production' ?
-    '/api/' :
-    '//localhost:3030/api/';
+    '/' :
+    '//localhost:3030/';
 
 
 // import Axios from 'axios';
