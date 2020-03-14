@@ -6,6 +6,7 @@ import OurServices from "./Pages/OurServices.jsx";
 import ProfessionalInfo from "./Pages/ProfessionalInfo.jsx";
 import OurServiceDetails from "./Pages/OurServiceDetails.jsx";
 import ContactUs from "./Pages/ContactUs.jsx";
+import WhyWe from "./Pages/WhyWe.jsx";
 import AsaidContactUs from "./Cmps/AsaidContactUs";
 import Maslulim from "./Pages/Maslulim";
 import Whatsapp from "./Cmps/Whatsapp";
@@ -19,7 +20,7 @@ class App extends Component {
     return (
       <div className="App">
 
-        <AsaidContactUs />
+        {/* <AsaidContactUs /> */}
         <Whatsapp />
         <header className="App-header">
           <Header />
@@ -34,6 +35,7 @@ class App extends Component {
           <Route exact path="/maslulim" component={Maslulim} />
           <Route exact path="/info" component={ProfessionalInfo} />
           <Route exact path="/contactUs" component={ContactUs} />
+          <Route exact path="/workWithUs" component={WhyWe} />
         </Switch>
 
         <section className="App-footer">
@@ -44,4 +46,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App;;

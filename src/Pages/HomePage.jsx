@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import Maslul from "../Cmps/Maslul";
+import Maslul2 from "../Cmps/Maslul2";
 // import { Carousel } from "antd";
 class HomePage extends React.Component {
   state = {
@@ -27,10 +28,6 @@ class HomePage extends React.Component {
     return (
       <section>
         <div className="main-img-home">
-          <img
-            className="logo-main"
-            src="https://res.cloudinary.com/artyompogosov/image/upload/v1580576748/rfyuvjhys2ujsqvzozfy.png"
-          />
           <Carousel fade="true">
             <Carousel.Item>
               <img
@@ -122,6 +119,7 @@ class HomePage extends React.Component {
         </div>
         <section className="main-page-maslulim">
           <Maslul />
+          <Maslul2 />
         </section>
         <div className="contact-us">
           <h2>

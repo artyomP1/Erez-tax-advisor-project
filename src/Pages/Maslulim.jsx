@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import ContactUsForm from "../Cmps/ContactUsForm.jsx";
 import Maslul from "../Cmps/Maslul";
-
+import Maslul2 from "../Cmps/Maslul2";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
@@ -13,6 +13,7 @@ class Maslulim extends React.Component {
       <section>
         <div>
           <Maslul />
+          <Maslul2 />
         </div>
         <div className="contact-us">
           <h2>

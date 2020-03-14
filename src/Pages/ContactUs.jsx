@@ -31,6 +31,7 @@ class ContactUs extends React.Component {
           className="contact-img"
           src="https://res.cloudinary.com/artyompogosov/image/upload/v1578227821/kovad6bxsxugwfwtryhl.jpg"
         />
+
         <div className="contact-container-page flex space-around">
           <div className="contact-details">
             <h3>פרטי ההתקשרות</h3>
@@ -41,11 +42,11 @@ class ContactUs extends React.Component {
               <div className="social-icons flex">
                 <SocialIcon
                   className="social facebook"
-                  url="https://www.facebook.com/pogosov"
+                  url="https://www.facebook.com/%D7%90%D7%A8%D7%96-%D7%A6%D7%95%D7%A8-%D7%94%D7%A0%D7%94%D7%9C%D7%AA-%D7%97%D7%A9%D7%91%D7%95%D7%A0%D7%95%D7%AA-%D7%97%D7%A9%D7%91%D7%95%D7%AA-%D7%A9%D7%9B%D7%A8-%D7%95%D7%99%D7%A2%D7%95%D7%A5-%D7%9E%D7%A1-106688874164468/"
                 />
                 <SocialIcon
                   className="social linkedin"
-                  url="https://www.linkedin.com/in/artyom-p"
+                  url="https://www.linkedin.com/in/erez-zur-0bba0a188/"
                 />
                 <SocialIcon
                   className="social whatsapp"
@@ -54,13 +55,13 @@ class ContactUs extends React.Component {
               </div>
             </div>
           </div>
-          <div>
-            <h3>מלאו את הטופס ונחזור אליך בהקדם</h3>
-            <ContactUsForm />
+          <div className="map-container flex">
+            <Map className="map flex" />
           </div>
         </div>
-        <div className="map-container flex">
-          <Map className="map flex" />
+        <div className="contactUs-form">
+          <h3>מלאו את הטופס ונחזור אליך בהקדם</h3>
+          <ContactUsForm />
         </div>
       </section>
     );

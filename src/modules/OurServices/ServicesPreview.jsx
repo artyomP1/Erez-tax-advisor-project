@@ -1,5 +1,4 @@
 import React from "react";
-import { Card } from "antd";
 export default function(props) {
   const { ourService } = props;
 
@@ -10,9 +9,6 @@ export default function(props) {
         <h2> {ourService.name}</h2>
         <p>{ourService.text.homePageTxt}</p>
       </div>
-      {/* <Card hoverable cover={<img alt="example" src={ourService.imgUrl} />}>
-        <h2> {ourService.name}</h2>
-      </Card> */}
     </div>
   );
 }

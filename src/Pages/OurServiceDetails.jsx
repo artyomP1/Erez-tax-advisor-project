@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 // import OurServicesService from "../modules/OurServices/OurServices.Service";
+import { BrowserRouter as Router } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { loadCurrService } from "../modules/OurServices/actions";
 import { connect } from "react-redux";
@@ -11,12 +12,26 @@ class OurServiceDetails extends Component {
   };
   async componentDidMount() {
     const id = await this.props.match.params;
-    console.log(id);
+    await this.props.loadCurrService(id.id);
+  }
+
+  componentWillMount() {
+    this.unlisten = this.props.history.listen((location, action) => {
+      this.getNewService();
+    });
+  }
+  // componentWillUnmount() {
+  //   this.unlisten();
+  // }
+
+  async getNewService() {
+    const id = await this.props.match.params;
     await this.props.loadCurrService(id.id);
   }
 
   render() {
     const { ourService } = this.props;
+
     if (ourService)
       return (
         <section>
@@ -24,26 +39,26 @@ class OurServiceDetails extends Component {
             <img className="service-page-img" src={ourService.imgPageUrl} />
             <h1>{ourService.name}</h1>
           </div>
-          <h2 className="page-title">{ourService.name}-</h2>
+          {/* <h2 className="page-title">{ourService.name}-</h2> */}
           <section className="ourServicePage">
-            {ourService.text.mainTxt.map(txt => {
-              return <p key={txt.idx}>{txt}.</p>;
+            {ourService.text.mainTxt.map((txt, idx) => {
+              return <p key={idx}>{txt}.</p>;
             })}
 
-            {ourService.text.bodyTxt.map(txt => {
+            {ourService.text.bodyTxt.map((txt, idx) => {
               return (
-                <div>
+                <div key={idx}>
                   <p>{txt.header}</p>
                   <ul>
-                    {txt.body.map(txt => {
+                    {txt.body.map((txt, idx) => {
                       return (
-                        <li className="info-service-list" key={txt.idx}>
-                          {txt}.
+                        <li className="info-service-list" key={idx}>
+                          {txt}
                         </li>
                       );
                     })}
                   </ul>
-                  <p>{txt.moreTxt}.</p>
+                  <p>{txt.moreTxt}</p>
                 </div>
               );
             })}
@@ -63,6 +78,15 @@ class OurServiceDetails extends Component {
       );
   }
 }
+
+// componentWillMount() {
+//   const { params, watch } = this.props;
+
+//   this.dispatch(fetchUser(params.id));
+//   watch('params.id', (newUserId) => {
+//     this.dispatch(fetchUser(newUserId));
+//   });
+// }
 
 const mapStateToProps = state => {
   return {

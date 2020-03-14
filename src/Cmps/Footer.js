@@ -37,8 +37,8 @@ export default function Header() {
 
             </section>
             <div className="social-icons flex">
-                <SocialIcon className="social facebook" url="https://www.facebook.com/pogosov" />
-                <SocialIcon className="social linkedin" url="https://www.linkedin.com/in/artyom-p" />
+                <SocialIcon className="social facebook" url="https://www.facebook.com/%D7%90%D7%A8%D7%96-%D7%A6%D7%95%D7%A8-%D7%94%D7%A0%D7%94%D7%9C%D7%AA-%D7%97%D7%A9%D7%91%D7%95%D7%A0%D7%95%D7%AA-%D7%97%D7%A9%D7%91%D7%95%D7%AA-%D7%A9%D7%9B%D7%A8-%D7%95%D7%99%D7%A2%D7%95%D7%A5-%D7%9E%D7%A1-106688874164468/" />
+                <SocialIcon className="social linkedin" url="https://www.linkedin.com/in/erez-zur-0bba0a188/" />
                 <SocialIcon className="social whatsapp" url="https://api.whatsapp.com/send?phone=972526036402&text=%20 שלום, אשמח לקבל ייעוץ" />
             </div>
             <div className="flex  space-between">

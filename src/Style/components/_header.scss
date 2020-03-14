@@ -28,7 +28,7 @@
   }
   a {
     height: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #626262;
     font-family: "Frank Ruhl Libre", serif;
     // margin-right: 20px;
@@ -37,9 +37,26 @@
     padding-right: 30px;
     border-right: 1px solid #b6b3b3;
   }
-
+  .service-web {
+    height: 100%;
+    font-size: 1rem;
+    color: #626262;
+    font-family: "Frank Ruhl Libre", serif;
+    // margin-right: 20px;
+    border-bottom: 2px solid white;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-right: 1px solid #b6b3b3;
+    cursor: pointer;
+  }
   a:hover {
     // border-bottom: 2px solid $clr0;
+    color: $clr0;
+
+    text-decoration: none;
+  }
+
+  span:hover {
     color: $clr0;
 
     text-decoration: none;
@@ -69,7 +86,24 @@
   z-index: 100;
 }
 
-@media (max-width: 830px) {
+@media (max-width: 1100px) {
+  .nav-bar {
+    a {
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+  }
+}
+@media (max-width: 880px) {
+  .nav-bar {
+    a {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
   .service-mobile {
     display: block;
   }
@@ -198,7 +232,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   right: 1px;
   a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     z-index: 1;
 
     border-right: none !important;
@@ -207,7 +241,7 @@
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 10px 14px;
   text-decoration: none;
   display: block !important;
 }

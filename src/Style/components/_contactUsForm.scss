@@ -54,6 +54,13 @@ textarea {
   cursor: pointer;
 }
 
+.contact-us .textarea select {
+  color: gray;
+}
+.textarea select {
+  color: gray;
+}
+
 .contact-us {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   //   background-color: gray;
@@ -106,11 +113,11 @@ textarea {
     flex-direction: column;
     height: 400px;
     div {
-      width: 350px;
+      width: 100%;
     }
   }
   .inputs {
-    width: 350px !important;
+    width: 100%;
   }
 
   .main-form {

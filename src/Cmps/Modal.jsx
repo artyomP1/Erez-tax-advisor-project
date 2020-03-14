@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Modal, Button } from "antd";
-import ContactUsForm from "../Cmps/ContactUsForm.jsx";
+import ContactUsForm from "./ContactUsForm.jsx";
 
 class ModalForm extends React.Component {
   state = { isVisible: false };
@@ -27,7 +27,7 @@ class ModalForm extends React.Component {
           <div className={className}>
             <h2>מעוניינים בייעוץ ללא עלות ?</h2>
             <h3>השאירו פרטים ונחזור אליכם בהקדם</h3>
-            <section className="kwes-form">
+            {/* <section className="kwes-form">
               <form
                 className="main-form align-center flex column"
                 // onSubmit={this.handleSubmit}
@@ -85,8 +85,11 @@ class ModalForm extends React.Component {
                 </div>
                 <input className="send-ms-btn" type="submit" value="שלח" />
               </form>
-            </section>
+            </section> */}
             {/* <ContactUsForm className="modal-form-inputs" /> */}
+            <div>
+              <ContactUsForm />
+            </div>
           </div>
         ) : (
           <div></div>

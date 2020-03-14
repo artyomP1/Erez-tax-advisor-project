@@ -24,3 +24,9 @@
   align-items: center;
   margin-bottom: 50px;
 }
+
+@media (max-width: 740px) {
+  .about-container {
+    flex-direction: column-reverse;
+  }
+}

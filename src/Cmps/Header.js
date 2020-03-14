@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import nav from "react-router-dom";
 
 
 class Header extends React.Component {
@@ -28,19 +29,20 @@ class Header extends React.Component {
                         </div>
                         <Link onClick={this.getOpenMenu} to="/">ראשי</Link>
                         <Link onClick={this.getOpenMenu} to="/about">אודות</Link>
+                        <Link onClick={this.getOpenMenu} to="/workWithUs">למה איתנו</Link>
                         <Link className="service-mobile" onClick={this.getOpenMenu} to="/service">שירותי המשרד</Link>
-                        <Link className="dropdown service-web" onClick={this.getOpenMenu} >
-                            <span class="dropbtn">שירותים</span >
-                            <div class="dropdown-content">
+                        <span className="dropdown service-web" onClick={this.getOpenMenu} >
+                            <span className="dropbtn">שירותים</span >
+                            <div className="dropdown-content">
                                 <Link onClick={this.getOpenMenu} to="/service/5a56640269f443a5d64b32ca">החזר מס לשכירים</Link>
                                 <Link onClick={this.getOpenMenu} to="/service/5a5664025f6ae9aa24a99fde">הצהרות הון</Link>
                                 <Link onClick={this.getOpenMenu} to="/service/5a56640252d6acddd183d319">הנהלת חשבונות</Link>
                                 <Link onClick={this.getOpenMenu} to="/service/5a1110252d6acddd183d319">תכנון מס</Link>
                                 <Link onClick={this.getOpenMenu} to="/service/5a566402ed1cf3412345674d">חשבות שכר</Link>
                                 <Link onClick={this.getOpenMenu} to="/service/5a566402ed1cf349f0b47b4d">דוחות שנתיים</Link>
-                                <Link onClick={this.getOpenMenu} to="/service/5a266402edbbb349f1b4123">ליווי וייעוץ בפתיחת עסק מול רשויות המס</Link>
+                                <Link onClick={this.getOpenMenu} to="/service/5a266402edbbb349f1b4123">פתיחת עסק</Link>
                             </div>
-                        </Link>
+                        </span>
                         <Link onClick={this.getOpenMenu} to="/Maslulim">מסלולים</Link>
                         <Link onClick={this.getOpenMenu} to="/info">מידע מקצועי</Link>
                         <Link onClick={this.getOpenMenu} to="/contactUs">צור קשר</Link>

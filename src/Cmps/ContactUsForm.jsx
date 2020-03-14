@@ -89,7 +89,7 @@ class ContactUsForm extends React.Component {
                 onChange={this.handleChangeSubject}
               >
                 {" "}
-                <option value="" disabled selected hidden>
+                <option value="" disabled hidden>
                   בחר נושא
                 </option>
                 <option value="הנהלת חשבונות">הנהלת חשבונות</option>

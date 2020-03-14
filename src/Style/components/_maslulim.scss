@@ -1,7 +1,9 @@
 .list-group-item {
   padding: 6px 10px !important;
 }
-
+.card-container {
+  flex-wrap: wrap;
+}
 #des {
   max-height: 80px !important;
 }
@@ -17,7 +19,7 @@
   }
 }
 .card-link:hover {
-  color: white !important;
+  color: darkblue !important;
 }
 
 .notforread {
@@ -25,8 +27,13 @@
 }
 
 .list-group-flush {
-  height: 850px !important;
   background-color: white;
+}
+.maslul1 {
+  height: 400px !important;
+}
+.maslul2 {
+  height: 755px !important;
 }
 .card {
   width: 30vw;
@@ -36,10 +43,23 @@
 .card-header {
   font-weight: bold;
   font-size: 1.3rem;
+  text-align: center;
+  height: 86px;
 }
 
+.price {
+  span {
+    font-weight: bold;
+  }
+}
+.price:hover {
+  color: black !important;
+}
 .card-container {
   margin-bottom: 40px;
+  span {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -49,6 +69,12 @@
   }
   .card-container {
     flex-wrap: wrap;
+  }
+  .maslul1 {
+    height: 480px !important;
+  }
+  .maslul2 {
+    height: 780px !important;
   }
 }
 
